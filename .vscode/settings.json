@@ -1,0 +1,9 @@
+{
+    "css.lint.unknownProperties": "ignore",
+    "scss.lint.unknownProperties": "ignore",
+    "less.lint.unknownProperties": "ignore",
+    
+    "css.lint.vendorPrefix": "ignore",
+    "scss.lint.vendorPrefix": "ignore",
+    "less.lint.vendorPrefix": "ignore"
+}
