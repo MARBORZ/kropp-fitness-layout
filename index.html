@@ -4,250 +4,255 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kropp Fitness</title>
+    <title>Kropp Fitness - Microsoft Internet Explorer</title>
     <link rel="stylesheet" href="css/normilize.css">
     <link rel="stylesheet" href="css/style.css">
-
-     <!-- Fonts -->
-     <link rel="preconnect" href="https://fonts.googleapis.com">
-     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-     <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&display=swap" rel="stylesheet">
- 
- 
-     <link rel="preconnect" href="https://fonts.googleapis.com">
-     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-     <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&family=Yantramanav:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
- 
- 
-     <!-- Fonts -->
 </head>
 <body>
 
-    <!-- Header -->
+    <!-- Windows Taskbar -->
+    <div class="win-taskbar" role="toolbar" aria-label="Windows Taskbar">
+        <button class="win-taskbar__start-btn" type="button">
+            <div class="win-taskbar__start-logo" aria-hidden="true"></div>
+            <strong>Start</strong>
+        </button>
+        <div class="win-taskbar__divider" aria-hidden="true"></div>
+        <div class="win-taskbar__apps">
+            <div class="win-taskbar__app">
+                <span>🌐</span> Kropp Fitness - Microsoft Internet Explorer
+            </div>
+        </div>
+        <div class="win-taskbar__tray" aria-label="System tray">
+            <span>🔊</span>
+            <span id="win-clock">12:00 PM</span>
+        </div>
+    </div>
+
+    <!-- Header — styled as IE browser toolbar -->
     <header class="header">
 
-        <!-- logo -->
-        <a href="#" class="header__logo">
-            <img src="icons/header-logo.svg" alt="LOGO" class="header__logo" width="135" height="25" loading = "lazy">
-        </a>
-        <!-- logo -->
-
-        <!-- nav -->
-        <nav class="header__menu">
-            <ul class="header__menu-list">
-                <li class="header__menu-item">
-                    <a href="#" class="header__menu-link is_current">Home</a>
-                </li>
-
-                <li class="header__menu-item">
-                    <a href="#" class="header__menu-link">Pages</a>
-                </li>
-
-                <li class="header__menu-item">
-                    <a href="#" class="header__menu-link">Portfolio</a>
-                </li>
-
-                <li class="header__menu-item">
-                    <a href="#" class="header__menu-link">Blog</a>
-                </li>
-
-                <li class="header__menu-item">
-                    <a href="#" class="header__menu-link">Shop</a>
-                </li>
-            </ul>
-        </nav>
-        <!-- nav -->
-
-        <div class="header__actions">
-            <!-- button book now -->
-            <button class="header__btn_book-now btn " type="button">
-                Book now
-            </button>
-
-            <!-- button burger -->
-            <button class="header__burger-btn" type="button" title="Open menu">
-                <span class="header__span invisible">Open menu</span>                   
-                <svg width="23" height="12" viewBox="0 0 23 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M0.5 1H22.5" stroke="white" stroke-dasharray="22 22"/>
-                    <path d="M0.5 1H22.5" stroke="white" stroke-dasharray="22 22"/>
-                    <path d="M0.5 6H22.5" stroke="white" stroke-dasharray="22 22"/>
-                    <path d="M0.5 6H22.5" stroke="white" stroke-dasharray="22 22"/>
-                    <path d="M0.5 11H22.5" stroke="white" stroke-dasharray="22 22"/>
-                    <path d="M0.5 11H22.5" stroke="white" stroke-dasharray="22 22"/>
-                </svg>   
-            </button>    
-
+        <!-- Window Title Bar -->
+        <div class="header__titlebar" role="banner">
+            <svg class="header__titlebar-icon" width="14" height="14" viewBox="0 0 16 16" aria-hidden="true">
+                <circle cx="8" cy="8" r="7" fill="#316AC5" stroke="#0A246A" stroke-width="1"/>
+                <text x="8" y="12" text-anchor="middle" font-size="10" fill="white" font-weight="bold">K</text>
+            </svg>
+            <span class="header__titlebar-text">Kropp Fitness - Microsoft Internet Explorer</span>
+            <div class="header__titlebar-controls" aria-label="Window controls">
+                <button class="header__titlebar-btn" type="button" title="Minimize" aria-label="Minimize">_</button>
+                <button class="header__titlebar-btn" type="button" title="Maximize" aria-label="Maximize">□</button>
+                <button class="header__titlebar-btn" type="button" title="Close" aria-label="Close" style="background:#CC0000;color:#FFFFFF;font-weight:bold;">✕</button>
+            </div>
         </div>
+
+        <!-- Menu bar row -->
+        <div class="header__menubar">
+
+            <!-- logo -->
+            <a href="#" class="header__logo" aria-label="Kropp Fitness Home">
+                <img src="icons/header-logo.svg" alt="Kropp Fitness Logo" width="100" height="18" loading="lazy">
+            </a>
+            <!-- logo -->
+
+            <!-- nav -->
+            <nav class="header__menu" aria-label="Main navigation">
+                <ul class="header__menu-list">
+                    <li class="header__menu-item">
+                        <a href="#" class="header__menu-link is_current">Home</a>
+                    </li>
+                    <li class="header__menu-item">
+                        <a href="#" class="header__menu-link">Pages</a>
+                    </li>
+                    <li class="header__menu-item">
+                        <a href="#" class="header__menu-link">Portfolio</a>
+                    </li>
+                    <li class="header__menu-item">
+                        <a href="#" class="header__menu-link">Blog</a>
+                    </li>
+                    <li class="header__menu-item">
+                        <a href="#" class="header__menu-link">Shop</a>
+                    </li>
+                </ul>
+            </nav>
+            <!-- nav -->
+
+            <div class="header__actions">
+                <!-- button book now -->
+                <button class="header__btn_book-now btn" type="button">
+                    Book Now
+                </button>
+
+                <!-- button burger -->
+                <button class="header__burger-btn" type="button" title="Open menu" aria-label="Open menu">
+                    <span class="header__span invisible">Open menu</span>
+                    <svg width="14" height="10" viewBox="0 0 23 12" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                        <path d="M0.5 1H22.5" stroke="black" stroke-dasharray="22 22"/>
+                        <path d="M0.5 6H22.5" stroke="black" stroke-dasharray="22 22"/>
+                        <path d="M0.5 11H22.5" stroke="black" stroke-dasharray="22 22"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <!-- Colored progress/status bar -->
+        <div class="header__statusbar" role="progressbar" aria-label="Page loading indicator"></div>
+
     </header>
     <!-- Header -->
 
     <!-- Main -->
-     <main class="content">
+    <main class="content">
         <h1 class="main__title invisible">Kropp Fitness Club</h1>
-        <section class="banner">
-            <h2 class="main__subtitle invisible">Upcoming events</h2>
+
+        <!-- Marquee ticker -->
+        <div class="win-marquee-wrapper" aria-label="Ticker">
+            ★ NEW EVENT JUNE 7–13 ★ CROSSFIT CLASSES NOW AVAILABLE ★ JOIN US TODAY ★ GET FIT WITH KROPP FITNESS ★ BOOK YOUR SESSION NOW ★
+        </div>
+
+        <!-- Banner Section -->
+        <section class="banner" aria-labelledby="banner-title">
+            <h2 class="main__subtitle invisible" id="banner-subtitle">Upcoming events</h2>
             <div class="banner__body">
                 <div class="banner__info">
-                    New event <br>
-                    coming up / <time datetime="06-07">june 7</time>&nbsp;-&nbsp;<time datetime="06-13">13</time>
+                    New event&nbsp;
+                    <time datetime="06-07">June 7</time>&nbsp;-&nbsp;<time datetime="06-13">13</time>
                 </div>
-                <h3 class="banner__title">Crossfit</h3>
+                <h3 class="banner__title" id="banner-title">Crossfit</h3>
             </div>
-            <banner class="banner__pagination">
+            <nav class="banner__pagination" aria-label="Banner pagination">
                 <ul class="banner__pagination-list">
                     <li class="banner__pagination-item">
-                        <button class="banner__pagination-btn is-current" type="button"></button>
+                        <button class="banner__pagination-btn is-current" type="button" aria-label="Slide 1" aria-current="true"></button>
                     </li>
                     <li class="banner__pagination-item">
-                        <button class="banner__pagination-btn" type="button"></button>
+                        <button class="banner__pagination-btn" type="button" aria-label="Slide 2"></button>
                     </li>
                     <li class="banner__pagination-item">
-                        <button class="banner__pagination-btn" type="button"></button>
+                        <button class="banner__pagination-btn" type="button" aria-label="Slide 3"></button>
                     </li>
                 </ul>
-            </banner>
+            </nav>
         </section>
+
         <!-- Motivation section -->
-        <section class="motivation">
-            <h2 class="invisible">Motivation</h2>
+        <section class="motivation" aria-labelledby="motivation-heading">
+            <h2 id="motivation-heading" class="invisible">Motivation</h2>
             <ul class="motivation__list">
                 <li class="motivation__item">
                     <div class="motivation__card container">
                         <div class="motivation__card-body">
-                            <h3 class="motivation__card-title title-medium backdrop-title"
-                            
-                            data-title ="Strong">
-
-                                Be you, just stronger!
-                                 <br> Power is in you
-
+                            <div class="motivation__card-title-wrapper">
+                                BE YOU, JUST STRONGER! / POWER IS IN YOU
+                            </div>
+                            <h3 class="motivation__card-title title-medium">
+                                Be you, just stronger!<br>Power is in you
                             </h3>
-
                             <div class="motivation__card-desc under-desc">
                                 <p>Unum solum justo ex ius. Pro cu probo laboramus eius insolens euripidis te eos, ut agam tota.</p>
                             </div>
-                            
                             <a href="#" class="motivation__card-btn btn transparent">
                                 View more
                             </a>
-                             
                         </div>
-                        <img class="motivation__card-image" src="img/source/motivation-card1.jpg" alt="A man pulling himself up on a horizontal bar" width="518px" height="760px">
+                        <img class="motivation__card-image" src="img/source/motivation-card1.jpg" alt="A man pulling himself up on a horizontal bar" width="280" height="400">
                     </div>
                 </li>
 
                 <li class="motivation__item">
                     <div class="motivation__card container">
                         <div class="motivation__card-body">
-                            <h3 class="motivation__card-title title-medium backdrop-title"
-                            
-                            data-title ="Start">
-
-                                Today is the best <br>
-                                day to start!
-
+                            <div class="motivation__card-title-wrapper">
+                                TODAY IS THE BEST DAY TO START!
+                            </div>
+                            <h3 class="motivation__card-title title-medium">
+                                Today is the best<br>day to start!
                             </h3>
-
                             <div class="motivation__card-desc under-desc">
                                 <p>Sed abhorreant constituam consectetuer eu. At mei clita deserunt, his movet molestie nemore.</p>
                             </div>
-                            
                             <a href="#" class="motivation__card-btn btn transparent">
-                                View more  
+                                View more
                             </a>
-                             
                         </div>
-                        <img class="motivation__card-image" src="img/source/motivation-card2.jpg" alt="Man with dumbbells" width="518px" height="760px">
+                        <img class="motivation__card-image" src="img/source/motivation-card2.jpg" alt="Man with dumbbells" width="280" height="400">
                     </div>
                 </li>
             </ul>
         </section>
-        <section class="gym-logos container-wide">
+
+        <!-- Gym Logos section -->
+        <section class="gym-logos container-wide" aria-labelledby="gym-logos-heading">
             <div class="gym-logos__container">
-              <h1 class="invisible">Gym logos</h1>
-              <ul class="gym-logos__list">
-                <h2 class="invisible">List of gym logos</h2>
-                <li class="gym-logos__item">
-                  <img src="icons/logos/1.svg" alt="gym-logo-1" class="gym-logos__img">
-                  <span class="gym__logos_item-text">Maxpump</span>
-                </li>
-                <li class="gym-logos__item">
-                  <img src="icons/logos/2.svg" alt="gym-logo-2" class="gym-logos__img gym-logos__img_arrow">
-                  <span class="gym__logos_item-text">aron gym</span>
-                </li>
-                <li class="gym-logos__item">
-                  <img src="icons/logos/3.svg" alt="gym-logo-3" class="gym-logos__img gym-logos__img_arrow">
-                  <span class="gym__logos_item-text">fit &amp; tone</span>
-                </li>
-                <li class="gym-logos__item">
-                  <img src="icons/logos/4.svg" alt="gym-logo-4" class="gym-logos__img gym-logos__img_arrow">
-                  <span class="gym__logos_item-text">forza</span>
-                </li>
-                <li class="gym-logos__item">
-                  <img src="icons/logos/5.svg" alt="gym-logo-5" class="gym-logos__img gym-logos__img_arrow">
-                  <span class="gym__logos_item-text">balance fitness</span>
-                </li>
-                <li class="gym-logos__item">
-                  <img src="icons/logos/6.svg" alt="gym-logo-6" class="gym-logos__img gym-logos__img_arrow">
-                  <span class="gym__logos_item-text">body sculpt</span>
-                </li>
-              </ul>
+                <h2 id="gym-logos-heading" class="invisible">Partner Gym Logos</h2>
+                <ul class="gym-logos__list">
+                    <li class="gym-logos__item">
+                        <img src="icons/logos/1.svg" alt="" class="gym-logos__img" aria-hidden="true">
+                        <span class="gym__logos_item-text">Maxpump</span>
+                    </li>
+                    <li class="gym-logos__item">
+                        <img src="icons/logos/2.svg" alt="" class="gym-logos__img gym-logos__img_arrow" aria-hidden="true">
+                        <span class="gym__logos_item-text">Aron Gym</span>
+                    </li>
+                    <li class="gym-logos__item">
+                        <img src="icons/logos/3.svg" alt="" class="gym-logos__img gym-logos__img_arrow" aria-hidden="true">
+                        <span class="gym__logos_item-text">Fit &amp; Tone</span>
+                    </li>
+                    <li class="gym-logos__item">
+                        <img src="icons/logos/4.svg" alt="" class="gym-logos__img gym-logos__img_arrow" aria-hidden="true">
+                        <span class="gym__logos_item-text">Forza</span>
+                    </li>
+                    <li class="gym-logos__item">
+                        <img src="icons/logos/5.svg" alt="" class="gym-logos__img gym-logos__img_arrow" aria-hidden="true">
+                        <span class="gym__logos_item-text">Balance Fitness</span>
+                    </li>
+                    <li class="gym-logos__item">
+                        <img src="icons/logos/6.svg" alt="" class="gym-logos__img gym-logos__img_arrow" aria-hidden="true">
+                        <span class="gym__logos_item-text">Body Sculpt</span>
+                    </li>
+                </ul>
             </div>
         </section>
-          <section class="join-us">
-              <div class="join-us__video-wrapper">
-                  <video src="" width="960" height="600" class="join-us__video" poster="./img/source/poster.jpg"></video>
 
-                  <button class="joins-us__play-button" type="button">Play</button>
-              </div>
+        <!-- Join Us Section -->
+        <section class="join-us" aria-labelledby="join-us-heading">
+            <div class="join-us__video-wrapper">
+                <video src="" width="640" height="400" class="join-us__video" poster="./img/source/poster.jpg" aria-label="Kropp Fitness promo video"></video>
+                <button class="joins-us__play-button" type="button" aria-label="Play video">Play</button>
+            </div>
 
-              <div class="join-us__body container">
-                    <h2 class="join-us__title">Join us</h2>
+            <div class="join-us__body container">
+                <h2 class="join-us__title" id="join-us-heading">Join Us</h2>
 
-                    <form class="join-us__form">
-                        <header class="join-us__header">
-                            <h3 class="join-us__form-title backdrop-title centered title-big"
-                            
-                            data-title="Go!"
-                            
-                            >     
+                <form class="join-us__form" aria-label="Join us form">
+                    <header class="join-us__header">
+                        <h3 class="join-us__form-title backdrop-title centered title-big"
+                            data-title="Go!">
                             Start here
-                            </h3>
-
-                            <div class="join-us__form-subtitle white-desc">
-                                <p>fill the form below to start your journey</p> 
-                            </div>
-
-
-                        </header>
-
-
-
-
-                        <div class="join-us__form-body">
-
-
-                            <label for="username" class="invisible">Name</label>
-                            <input id ="username" class="join-us__form-input input" placeholder="Name">
-                            
-
-
-                            <label for="email" class="invisible">Email</label>
-                            <input id ="email" class="join-us__form-input input" placeholder="Email" type="email">
-
-
-
-
-                            <button class="join-us__button btn transparent">Subscribe</button>
+                        </h3>
+                        <div class="join-us__form-subtitle white-desc">
+                            <p>Fill the form below to start your journey</p>
                         </div>
-                    </form>
-              </div>
-          </section>
-        <section class="map container-wide">
-            <img src="./img/source/map.jpg" alt="google_map" class="map__img" width="960" height="600">
+                    </header>
+
+                    <div class="join-us__form-body">
+                        <label for="username" class="invisible">Name</label>
+                        <input id="username" class="join-us__form-input input" placeholder="Name" type="text" autocomplete="name">
+
+                        <label for="email" class="invisible">Email</label>
+                        <input id="email" class="join-us__form-input input" placeholder="Email" type="email" autocomplete="email">
+
+                        <button class="join-us__button btn transparent" type="submit">Subscribe</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <!-- Map Section -->
+        <section class="map container-wide" aria-labelledby="map-heading">
+            <img src="./img/source/map.jpg" alt="Map showing Kropp Fitness location" class="map__img" width="640" height="400">
 
             <div class="map__body">
-                <h2 class="map__title title-medium backdrop-title centered" data-title="look">
+                <h2 class="map__title title-medium backdrop-title centered" data-title="look" id="map-heading">
                     Find us near you
                 </h2>
 
@@ -258,71 +263,81 @@
                 <a href="" class="map__btn btn transparent">View more</a>
             </div>
         </section>
-        <section class="family">
+
+        <!-- Family Section -->
+        <section class="family" aria-labelledby="family-heading">
             <header class="family__header container">
-                <h2 class="header__title title-big backdrop-title centered" data-title="part">
-                    be a part of our fit family
+                <h2 class="header__title title-big backdrop-title centered" data-title="part" id="family-heading">
+                    Be a part of our fit family
                 </h2>
 
                 <div class="family__desc white-desc">
-                    <p>Training helps you think and feel better. join us!</p>
+                    <p>Training helps you think and feel better. Join us!</p>
                 </div>
             </header>
 
-
-            <div class="family__body-img container-wide">
-                <img src="img/family-img/man-pulling-up.jpg" alt="Training people" class="family__img" width="414" height="479"> 
-                <img src="img/family-img/men-talks.jpg" alt="Training people" class="family__img" width="744" height="479"> 
-                <img src="img/family-img/girls-training.jpg" alt="Training people" class="family__img" width="396" height="479"> 
-                <img src="img/family-img/man-wearing-gloves.jpg" alt="Training people" class="family__img" width="396" height="479">  
-                <img src="img/family-img/man-pulling-up.jpg" alt="Training people" class="family__img" width="414" height="479">
-            </div>    
+            <div class="family__body-img container-wide" role="list" aria-label="Family fitness photos">
+                <img src="img/family-img/man-pulling-up.jpg" alt="Person doing pull-ups" class="family__img" width="280" height="340" role="listitem">
+                <img src="img/family-img/men-talks.jpg" alt="People talking after training" class="family__img" width="500" height="340" role="listitem">
+                <img src="img/family-img/girls-training.jpg" alt="Women training together" class="family__img" width="260" height="340" role="listitem">
+                <img src="img/family-img/man-wearing-gloves.jpg" alt="Man wearing boxing gloves" class="family__img" width="260" height="340" role="listitem">
+                <img src="img/family-img/man-pulling-up.jpg" alt="Person doing pull-ups" class="family__img" width="280" height="340" role="listitem">
+            </div>
         </section>
-        <section class="calculate">
+
+        <!-- Calculate / BMI Section -->
+        <section class="calculate" aria-labelledby="bmi-heading">
             <div class="calculate__inner container">
                 <div class="calculate__body">
-                    <h2 class="calculate__title title-medium backdrop-title" data-title="BMI">
-                        Input your BMI
-                    </h2>
-
-                    <div class="calculate__desc under-desc">
-                        <p>Duo graece ponderum ne, ei mel aliquando. Pro te tamquam nonumes, nam no nemore epicurei</p>
+                    <div class="calculate__body-titlebar">
+                        <span>📊</span> BMI Calculator
                     </div>
+                    <div class="calculate__body-content">
+                        <h2 class="calculate__title title-medium" id="bmi-heading">
+                            Input your BMI
+                        </h2>
 
-                    <form class="calculate__form">
-                        <div class="calculate__form-body">
-                            <label for="height" class="invisible">Height</label>
-                            <input id ="height" class="calculate__input input" placeholder="Height / cm" type="number">
-                            <label for="weight" class="invisible">Weight</label>
-                            <input id ="weight" class="calculate__input input" placeholder="Weight / kg" type="number">
-                            <label for="age" class="invisible">Age</label>
-                            <input id ="age" class="calculate__input input" placeholder="Age" type="number">
-                            
-                            <label for="gender" class="invisible">Gender</label>
-                            <select id="gender" class="calculate__input input" required>
-                                <option value="" disabled selected class="calculate__option option-title">Gender</option>
-                                <option value="male" class="calculate__option">Male</option>
-                                <option value="female" class="calculate__option">Female</option>
-                            </select>
-
-                            <label for="activity" class="invisible">Activity Factor</label>
-                            <select id="activity" class="calculate__input input wide" required>
-                                <option value="" disabled selected class="calculate__option option-title">Select an activity factor</option>
-                                <option value="1" class="calculate__option">1</option>
-                                <option value="2" class="calculate__option">2</option>
-                            </select>
+                        <div class="calculate__desc under-desc">
+                            <p>Duo graece ponderum ne, ei mel aliquando. Pro te tamquam nonumes, nam no nemore epicurei</p>
                         </div>
 
-                        <button class="calculate__form-btn btn transparent" type="submit">calculate</button>
-                    </form>
+                        <form class="calculate__form" aria-label="BMI calculator form">
+                            <div class="calculate__form-body">
+                                <label for="height" class="invisible">Height</label>
+                                <input id="height" class="calculate__input input" placeholder="Height / cm" type="number" min="1" max="300">
+
+                                <label for="weight" class="invisible">Weight</label>
+                                <input id="weight" class="calculate__input input" placeholder="Weight / kg" type="number" min="1" max="500">
+
+                                <label for="age" class="invisible">Age</label>
+                                <input id="age" class="calculate__input input" placeholder="Age" type="number" min="1" max="120">
+
+                                <label for="gender" class="invisible">Gender</label>
+                                <select id="gender" class="calculate__input input" required aria-required="true">
+                                    <option value="" disabled selected>Gender</option>
+                                    <option value="male">Male</option>
+                                    <option value="female">Female</option>
+                                </select>
+
+                                <label for="activity" class="invisible">Activity Factor</label>
+                                <select id="activity" class="calculate__input input wide" required aria-required="true">
+                                    <option value="" disabled selected>Select an activity factor</option>
+                                    <option value="1">Sedentary (little or no exercise)</option>
+                                    <option value="2">Active (regular exercise)</option>
+                                </select>
+                            </div>
+
+                            <button class="calculate__form-btn btn" type="submit">Calculate</button>
+                        </form>
+                    </div>
                 </div>
 
                 <div class="calculate__wrapper-table">
-                    <table class="calculate__table">
+                    <table class="calculate__table" aria-label="BMI weight status reference table">
                         <thead>
                             <tr>
-                                <th>BMI</th>
-                                <th>Weight status</th>
+                                <th scope="col">BMI</th>
+                                <th scope="col">Weight Status</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -339,148 +354,140 @@
                                 <td>Overweight</td>
                             </tr>
                             <tr>
-                                <td>30.0 - and Above</td>
+                                <td>30.0 and Above</td>
                                 <td>Obese</td>
                             </tr>
                         </tbody>
                         <tfoot>
                             <tr>
-                                <td colspan="2"><b>BMR</b>  Metabolic Rate / <b>BMI</b>  Body Mass Index</td>
+                                <td colspan="2"><b>BMR</b> = Metabolic Rate &nbsp;|&nbsp; <b>BMI</b> = Body Mass Index</td>
                             </tr>
                         </tfoot>
                     </table>
                 </div>
             </div>
         </section>
-     </main>
+
+    </main>
     <!-- Main -->
 
 
     <!-- Footer -->
-     <footer class="footer">
+    <footer class="footer">
         <div class="footer__main">
             <div class="footer__main-inner container">
                 <header class="footer__header">
+                    <a href="#" class="footer_logo" aria-label="Kropp Fitness Home">
+                        <img src="icons/header-logo.svg" alt="Kropp Fitness Logo" class="footer__logo" width="160" height="30" loading="lazy">
+                    </a>
 
-                <a href="#" class="footer_logo">
-                    <img src="icons/header-logo.svg" alt="LOGO" class="footer__logo" width="270" height="50" loading = "lazy">
-                </a>    
-
-                <p class="footer__desc white-desc">
-
-                    please feel free to send us an e-mail at <a href="mailto:kropp@qodeinteractive.com">kropp@qodeinteractive.com</a> For any <br>additional inquiries
-
-                </p>
-
+                    <p class="footer__desc white-desc">
+                        Please feel free to send us an e-mail at <a href="mailto:kropp@qodeinteractive.com">kropp@qodeinteractive.com</a> for any additional inquiries.
+                    </p>
                 </header>
+
                 <div class="footer__body">
                     <div class="footer__column">
                         <h2 class="footer__column-title">About</h2>
-
-                    <p class="footer__column-desc">
-                                    Shape up your site with Kropp,
-                                    a theme especially made for
-                                    fitness & gym websites.
-
-
-                    </p>
+                        <p class="footer__column-desc">
+                            Shape up your site with Kropp, a theme especially made for fitness &amp; gym websites.
+                        </p>
                     </div>
+
                     <div class="footer__column">
                         <h2 class="footer__column-title">Working Hours</h2>
+                        <div class="footer__shedule">
+                            Monday - Friday<br>
+                            <time datetime="05:30/24:00">05:30 - 24:00</time>
+                        </div>
+                        <div class="footer__shedule">
+                            Weekdays<br>
+                            <time datetime="00:00/24:00">00:00 - 24:00</time>
+                        </div>
+                    </div>
 
-                    <div class="footer__shedule">
-                        
-                        Monday - Friday <br>
-                        <time datetime="05:30/24:00">05:30 - 24:00</time>
-                    </div>
-                    <div class="footer__shedule">
-                        Weekdays <br>
-                        <time datetime="00:00/24:00">00:00 - 24:00</time>
-
-                    </div>
-                    </div>
                     <div class="footer__column">
                         <h2 class="footer__column-title">Location</h2>
-
-                    <address class="footer__address">
-                        68 Jay Street, Brooklyn, <br>
-                        NY 11201, United States
-                    </address>
-
-                    <div class="footer__contacts">
-                        <ul class="footer__contacts-list">
-                            <li class="footer__contacts-item"><a href="mailto: kropp@qodeinteractive.com" class="footer__contacts-link">kropp@qodeinteractive.com</a></li>
-                            <li class="footer__contacts-item"><a href="tel: + 17184076400" class="footer__contacts-link">+ (1) 718 - 407 - 6400</a></li>
-                        </ul>
+                        <address class="footer__address">
+                            68 Jay Street, Brooklyn,<br>
+                            NY 11201, United States
+                        </address>
+                        <div class="footer__contacts">
+                            <ul class="footer__contacts-list">
+                                <li class="footer__contacts-item"><a href="mailto:kropp@qodeinteractive.com" class="footer__contacts-link">kropp@qodeinteractive.com</a></li>
+                                <li class="footer__contacts-item"><a href="tel:+17184076400" class="footer__contacts-link">+1 (718) 407-6400</a></li>
+                            </ul>
+                        </div>
                     </div>
-                    </div>
+
                     <div class="footer__column">
                         <h2 class="footer__column-title has-arrow">Start Now</h2>
-                        
 
-                        <form class="footer__form-sub">
-                            <label class="invisible" for="sub-email">Email</label>
-
-
-                            <input type="email" id="sub-email" class="footer__form-input input" placeholder="Email">
-
-                            <button class="footer__sub-btn" type="submit" title="Subscribe"><span class="invisible">Subscribe</span></button>
-
+                        <form class="footer__form-sub" aria-label="Newsletter subscription">
+                            <label class="invisible" for="sub-email">Email address</label>
+                            <input type="email" id="sub-email" class="footer__form-input input" placeholder="Your Email" autocomplete="email">
+                            <button class="footer__sub-btn" type="submit" title="Subscribe" aria-label="Subscribe to newsletter"></button>
                         </form>
+
                         <footer class="footer__soc1als">
-
-                        <ul class="footer__soc1als-list">
-                            <li class="footer__soc1als-item">
-                                <a href="#" class="footer__soc1als-link" target="_blank">
-                                    <svg fill="#ffffff" stroke="#ffffff" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M16.656 1.029c1.637-0.025 3.262-0.012 4.886-0.025 0.054 2.031 0.878 3.859 2.189 5.213l-0.002-0.002c1.411 1.271 3.247 2.095 5.271 2.235l0.028 0.002v5.036c-1.912-0.048-3.71-0.489-5.331-1.247l0.082 0.034c-0.784-0.377-1.447-0.764-2.077-1.196l0.052 0.034c-0.012 3.649 0.012 7.298-0.025 10.934-0.103 1.853-0.719 3.543-1.707 4.954l0.020-0.031c-1.652 2.366-4.328 3.919-7.371 4.011l-0.014 0c-0.123 0.006-0.268 0.009-0.414 0.009-1.73 0-3.347-0.482-4.725-1.319l0.040 0.023c-2.508-1.509-4.238-4.091-4.558-7.094l-0.004-0.041c-0.025-0.625-0.037-1.25-0.012-1.862 0.49-4.779 4.494-8.476 9.361-8.476 0.547 0 1.083 0.047 1.604 0.136l-0.056-0.008c0.025 1.849-0.050 3.699-0.050 5.548-0.423-0.153-0.911-0.242-1.42-0.242-1.868 0-3.457 1.194-4.045 2.861l-0.009 0.030c-0.133 0.427-0.21 0.918-0.21 1.426 0 0.206 0.013 0.41 0.037 0.61l-0.002-0.024c0.332 2.046 2.086 3.59 4.201 3.59 0.061 0 0.121-0.001 0.181-0.004l-0.009 0c1.463-0.044 2.733-0.831 3.451-1.994l0.010-0.018c0.267-0.372 0.45-0.822 0.511-1.311l0.001-0.014c0.125-2.237 0.075-4.461 0.087-6.698 0.012-5.036-0.012-10.060 0.025-15.083z"></path>
-                                    </svg>
-                                </a>
-                            </li>
-                            <li class="footer__soc1als-item">       
-                                <a href="#" class="footer__soc1als-link" target="_blank">
-                                    <svg viewBox="0 0 24 24" fill="#ffffff" stroke="#ffffff" xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M20.5949 4.45999C21.5421 4.71353 22.2865 5.45785 22.54 6.40501C22.9982 8.12002 23 11.7004 23 11.7004C23 11.7004 23 15.2807 22.54 16.9957C22.2865 17.9429 21.5421 18.6872 20.5949 18.9407C18.88 19.4007 12 19.4007 12 19.4007C12 19.4007 5.12002 19.4007 3.405 18.9407C2.45785 18.6872 1.71353 17.9429 1.45999 16.9957C1 15.2807 1 11.7004 1 11.7004C1 11.7004 1 8.12002 1.45999 6.40501C1.71353 5.45785 2.45785 4.71353 3.405 4.45999C5.12002 4 12 4 12 4C12 4 18.88 4 20.5949 4.45999ZM15.5134 11.7007L9.79788 15.0003V8.40101L15.5134 11.7007Z" />
-                                    </svg>
-                                </a>
-                            </li>   
-                            <li class="footer__soc1als-item">
-                                <a href="#" class="footer__soc1als-link" target="_blank">
-                                    <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M9.3125 4.70508C11.8965 4.70508 14.0293 6.83789 14.0293 9.42188C14.0293 12.0469 11.8965 14.1387 9.3125 14.1387C6.6875 14.1387 4.5957 12.0469 4.5957 9.42188C4.5957 6.83789 6.6875 4.70508 9.3125 4.70508ZM9.3125 12.498C10.9941 12.498 12.3477 11.1445 12.3477 9.42188C12.3477 7.74023 10.9941 6.38672 9.3125 6.38672C7.58984 6.38672 6.23633 7.74023 6.23633 9.42188C6.23633 11.1445 7.63086 12.498 9.3125 12.498ZM15.3008 4.54102C15.3008 5.15625 14.8086 5.64844 14.1934 5.64844C13.5781 5.64844 13.0859 5.15625 13.0859 4.54102C13.0859 3.92578 13.5781 3.43359 14.1934 3.43359C14.8086 3.43359 15.3008 3.92578 15.3008 4.54102ZM18.418 5.64844C18.5 7.16602 18.5 11.7188 18.418 13.2363C18.3359 14.7129 18.0078 15.9844 16.9414 17.0918C15.875 18.1582 14.5625 18.4863 13.0859 18.5684C11.5684 18.6504 7.01562 18.6504 5.49805 18.5684C4.02148 18.4863 2.75 18.1582 1.64258 17.0918C0.576172 15.9844 0.248047 14.7129 0.166016 13.2363C0.0839844 11.7188 0.0839844 7.16602 0.166016 5.64844C0.248047 4.17188 0.576172 2.85938 1.64258 1.79297C2.75 0.726562 4.02148 0.398438 5.49805 0.316406C7.01562 0.234375 11.5684 0.234375 13.0859 0.316406C14.5625 0.398438 15.875 0.726562 16.9414 1.79297C18.0078 2.85938 18.3359 4.17188 18.418 5.64844ZM16.4492 14.8359C16.9414 13.6465 16.8184 10.7754 16.8184 9.42188C16.8184 8.10938 16.9414 5.23828 16.4492 4.00781C16.1211 3.22852 15.5059 2.57227 14.7266 2.28516C13.4961 1.79297 10.625 1.91602 9.3125 1.91602C7.95898 1.91602 5.08789 1.79297 3.89844 2.28516C3.07812 2.61328 2.46289 3.22852 2.13477 4.00781C1.64258 5.23828 1.76562 8.10938 1.76562 9.42188C1.76562 10.7754 1.64258 13.6465 2.13477 14.8359C2.46289 15.6562 3.07812 16.2715 3.89844 16.5996C5.08789 17.0918 7.95898 16.9688 9.3125 16.9688C10.625 16.9688 13.4961 17.0918 14.7266 16.5996C15.5059 16.2715 16.1621 15.6562 16.4492 14.8359Z" fill="white"/>
-                                    </svg>
-                                </a>
-                            </li>
-                            <li class="footer__soc1als-item">
-                                <a href="#" class="footer__soc1als-link" target="_blank">
-                                    <svg width="11" height="22" viewBox="0 0 11 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M2.97332 21.2559V10.7763H0.339111V7.16498L2.97332 7.16334L2.96964 5.03633C2.96964 2.09019 3.7687 0.296795 7.23882 0.296795H10.8186V3.90978H8.32198C6.97028 3.90978 6.90601 4.4141 6.90601 5.35563L6.90069 7.16334H10.8526L10.4703 10.7751L6.90315 10.7763L6.90069 21.2559H2.97332Z" fill="white"/>
-                                    </svg>
-
-                                </a>
-                            </li>
-                            <li class="footer__soc1als-item">
-                                <a href="#" class="footer__soc1als-link" target="_blank">
-                                    <svg width="22" height="18" viewBox="0 0 22 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M18.9512 5.15625C18.9512 5.36133 18.9512 5.52539 18.9512 5.73047C18.9512 11.4316 14.6445 17.9531 6.72852 17.9531C4.26758 17.9531 2.01172 17.2559 0.125 16.0254C0.453125 16.0664 0.78125 16.1074 1.15039 16.1074C3.16016 16.1074 5.00586 15.4102 6.48242 14.2617C4.5957 14.2207 2.99609 12.9902 2.46289 11.2676C2.75 11.3086 2.99609 11.3496 3.2832 11.3496C3.65234 11.3496 4.0625 11.2676 4.39062 11.1855C2.42188 10.7754 0.945312 9.05273 0.945312 6.96094V6.91992C1.51953 7.24805 2.2168 7.41211 2.91406 7.45312C1.72461 6.67383 0.986328 5.36133 0.986328 3.88477C0.986328 3.06445 1.19141 2.32617 1.56055 1.71094C3.69336 4.29492 6.89258 6.01758 10.4609 6.22266C10.3789 5.89453 10.3379 5.56641 10.3379 5.23828C10.3379 2.85938 12.2656 0.931641 14.6445 0.931641C15.875 0.931641 16.9824 1.42383 17.8027 2.28516C18.7461 2.08008 19.6895 1.71094 20.5098 1.21875C20.1816 2.24414 19.5254 3.06445 18.623 3.59766C19.4844 3.51562 20.3457 3.26953 21.084 2.94141C20.5098 3.80273 19.7715 4.54102 18.9512 5.15625Z" fill="white"/>
-                                    </svg>
-                                </a>
-                            </li>
-                        </ul>
-
-
+                            <ul class="footer__soc1als-list" aria-label="Social media links">
+                                <li class="footer__soc1als-item">
+                                    <a href="#" class="footer__soc1als-link" target="_blank" rel="noopener noreferrer" aria-label="TikTok">
+                                        <svg fill="#ffffff" stroke="none" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M16.656 1.029c1.637-0.025 3.262-0.012 4.886-0.025 0.054 2.031 0.878 3.859 2.189 5.213l-0.002-0.002c1.411 1.271 3.247 2.095 5.271 2.235l0.028 0.002v5.036c-1.912-0.048-3.71-0.489-5.331-1.247l0.082 0.034c-0.784-0.377-1.447-0.764-2.077-1.196l0.052 0.034c-0.012 3.649 0.012 7.298-0.025 10.934-0.103 1.853-0.719 3.543-1.707 4.954l0.020-0.031c-1.652 2.366-4.328 3.919-7.371 4.011l-0.014 0c-0.123 0.006-0.268 0.009-0.414 0.009-1.73 0-3.347-0.482-4.725-1.319l0.040 0.023c-2.508-1.509-4.238-4.091-4.558-7.094l-0.004-0.041c-0.025-0.625-0.037-1.25-0.012-1.862 0.49-4.779 4.494-8.476 9.361-8.476 0.547 0 1.083 0.047 1.604 0.136l-0.056-0.008c0.025 1.849-0.050 3.699-0.050 5.548-0.423-0.153-0.911-0.242-1.42-0.242-1.868 0-3.457 1.194-4.045 2.861l-0.009 0.030c-0.133 0.427-0.21 0.918-0.21 1.426 0 0.206 0.013 0.41 0.037 0.61l-0.002-0.024c0.332 2.046 2.086 3.59 4.201 3.59 0.061 0 0.121-0.001 0.181-0.004l-0.009 0c1.463-0.044 2.733-0.831 3.451-1.994l0.010-0.018c0.267-0.372 0.45-0.822 0.511-1.311l0.001-0.014c0.125-2.237 0.075-4.461 0.087-6.698 0.012-5.036-0.012-10.060 0.025-15.083z"></path></svg>
+                                    </a>
+                                </li>
+                                <li class="footer__soc1als-item">
+                                    <a href="#" class="footer__soc1als-link" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+                                        <svg viewBox="0 0 24 24" fill="#ffffff" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path fill-rule="evenodd" clip-rule="evenodd" d="M20.5949 4.45999C21.5421 4.71353 22.2865 5.45785 22.54 6.40501C22.9982 8.12002 23 11.7004 23 11.7004C23 11.7004 23 15.2807 22.54 16.9957C22.2865 17.9429 21.5421 18.6872 20.5949 18.9407C18.88 19.4007 12 19.4007 12 19.4007C12 19.4007 5.12002 19.4007 3.405 18.9407C2.45785 18.6872 1.71353 17.9429 1.45999 16.9957C1 15.2807 1 11.7004 1 11.7004C1 11.7004 1 8.12002 1.45999 6.40501C1.71353 5.45785 2.45785 4.71353 3.405 4.45999C5.12002 4 12 4 12 4C12 4 18.88 4 20.5949 4.45999ZM15.5134 11.7007L9.79788 15.0003V8.40101L15.5134 11.7007Z"/></svg>
+                                    </a>
+                                </li>
+                                <li class="footer__soc1als-item">
+                                    <a href="#" class="footer__soc1als-link" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                                        <svg width="14" height="14" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M9.3125 4.70508C11.8965 4.70508 14.0293 6.83789 14.0293 9.42188C14.0293 12.0469 11.8965 14.1387 9.3125 14.1387C6.6875 14.1387 4.5957 12.0469 4.5957 9.42188C4.5957 6.83789 6.6875 4.70508 9.3125 4.70508ZM9.3125 12.498C10.9941 12.498 12.3477 11.1445 12.3477 9.42188C12.3477 7.74023 10.9941 6.38672 9.3125 6.38672C7.58984 6.38672 6.23633 7.74023 6.23633 9.42188C6.23633 11.1445 7.63086 12.498 9.3125 12.498ZM15.3008 4.54102C15.3008 5.15625 14.8086 5.64844 14.1934 5.64844C13.5781 5.64844 13.0859 5.15625 13.0859 4.54102C13.0859 3.92578 13.5781 3.43359 14.1934 3.43359C14.8086 3.43359 15.3008 3.92578 15.3008 4.54102ZM18.418 5.64844C18.5 7.16602 18.5 11.7188 18.418 13.2363C18.3359 14.7129 18.0078 15.9844 16.9414 17.0918C15.875 18.1582 14.5625 18.4863 13.0859 18.5684C11.5684 18.6504 7.01562 18.6504 5.49805 18.5684C4.02148 18.4863 2.75 18.1582 1.64258 17.0918C0.576172 15.9844 0.248047 14.7129 0.166016 13.2363C0.0839844 11.7188 0.0839844 7.16602 0.166016 5.64844C0.248047 4.17188 0.576172 2.85938 1.64258 1.79297C2.75 0.726562 4.02148 0.398438 5.49805 0.316406C7.01562 0.234375 11.5684 0.234375 13.0859 0.316406C14.5625 0.398438 15.875 0.726562 16.9414 1.79297C18.0078 2.85938 18.3359 4.17188 18.418 5.64844Z" fill="white"/></svg>
+                                    </a>
+                                </li>
+                                <li class="footer__soc1als-item">
+                                    <a href="#" class="footer__soc1als-link" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                                        <svg width="8" height="14" viewBox="0 0 11 22" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M2.97332 21.2559V10.7763H0.339111V7.16498L2.97332 7.16334L2.96964 5.03633C2.96964 2.09019 3.7687 0.296795 7.23882 0.296795H10.8186V3.90978H8.32198C6.97028 3.90978 6.90601 4.4141 6.90601 5.35563L6.90069 7.16334H10.8526L10.4703 10.7751L6.90315 10.7763L6.90069 21.2559H2.97332Z" fill="white"/></svg>
+                                    </a>
+                                </li>
+                                <li class="footer__soc1als-item">
+                                    <a href="#" class="footer__soc1als-link" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+                                        <svg width="14" height="12" viewBox="0 0 22 18" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M18.9512 5.15625C18.9512 5.36133 18.9512 5.52539 18.9512 5.73047C18.9512 11.4316 14.6445 17.9531 6.72852 17.9531C4.26758 17.9531 2.01172 17.2559 0.125 16.0254C0.453125 16.0664 0.78125 16.1074 1.15039 16.1074C3.16016 16.1074 5.00586 15.4102 6.48242 14.2617C4.5957 14.2207 2.99609 12.9902 2.46289 11.2676C2.75 11.3086 2.99609 11.3496 3.2832 11.3496C3.65234 11.3496 4.0625 11.2676 4.39062 11.1855C2.42188 10.7754 0.945312 9.05273 0.945312 6.96094V6.91992C1.51953 7.24805 2.2168 7.41211 2.91406 7.45312C1.72461 6.67383 0.986328 5.36133 0.986328 3.88477C0.986328 3.06445 1.19141 2.32617 1.56055 1.71094C3.69336 4.29492 6.89258 6.01758 10.4609 6.22266C10.3789 5.89453 10.3379 5.56641 10.3379 5.23828C10.3379 2.85938 12.2656 0.931641 14.6445 0.931641C15.875 0.931641 16.9824 1.42383 17.8027 2.28516C18.7461 2.08008 19.6895 1.71094 20.5098 1.21875C20.1816 2.24414 19.5254 3.06445 18.623 3.59766C19.4844 3.51562 20.3457 3.26953 21.084 2.94141C20.5098 3.80273 19.7715 4.54102 18.9512 5.15625Z" fill="white"/></svg>
+                                    </a>
+                                </li>
+                            </ul>
                         </footer>
                     </div>
                 </div>
             </div>
         </div>
+
         <div class="footer__extra">
             <div class="footer__extra-inner container">
-
-                <div class="footer__copyright">© <time datetime="2022">2022</time> Qode Interactive, All Rights Reserved | <a href="#">Privacy Policy</a> | <a href="#">Contact Us</a></div>
+                <div class="footer__copyright">
+                    &copy; <time datetime="2022">2022</time> Qode Interactive, All Rights Reserved |
+                    <a href="#">Privacy Policy</a> | <a href="#">Contact Us</a>
+                </div>
             </div>
         </div>
-     </footer>
-     <script src="./js/index.js"></script>
+    </footer>
+    <!-- Footer -->
+
+    <script src="./js/index.js"></script>
+    <script>
+        // Live clock in taskbar
+        function updateClock() {
+            const now = new Date();
+            let h = now.getHours();
+            const m = String(now.getMinutes()).padStart(2, '0');
+            const ampm = h >= 12 ? 'PM' : 'AM';
+            h = h % 12 || 12;
+            const el = document.getElementById('win-clock');
+            if (el) el.textContent = h + ':' + m + ' ' + ampm;
+        }
+        updateClock();
+        setInterval(updateClock, 60000);
+    </script>
 </body>
 </html>
