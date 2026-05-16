@@ -1,21 +1,21 @@
 # Kropp Fitness — Layout Experiment
 
-A layout-focused fitness landing page built with semantic HTML, modern CSS, and vanilla JavaScript. Emphasizes visual hierarchy, typography, and responsive design without frameworks.
+Fitness landing page focused on CSS layouts. Built with HTML, CSS, and vanilla JavaScript.
 
 ## 🎨 About
 
-Kropp Fitness is a comprehensive landing page experiment showcasing modern CSS layout techniques, semantic HTML structure, and clean design patterns. Features multiple sections including hero banner, motivation cards, BMI calculator, video integration, and responsive navigation.
+Layout practice project. Has multiple sections — hero, motivation cards, BMI calculator, video, forms. Wanted to practice Flexbox and Grid without frameworks.
 
 ## ✨ Features
 
-- **Semantic HTML5** — Proper document structure and accessibility
-- **Modern CSS Layouts** — Flexbox and Grid for responsive design
-- **Custom Typography** — Heebo and Yantramanav font families
-- **Interactive Forms** — BMI calculator and subscription forms
-- **Video Integration** — Embedded video with custom controls
-- **Responsive Design** — Mobile-first approach with adaptive layouts
-- **Visual Hierarchy** — Backdrop titles and structured content sections
-- **Social Media Links** — Integrated social platform connections
+- **Semantic HTML5** — Proper tags and structure
+- **Flexbox and Grid** — CSS layouts
+- **Custom Fonts** — Heebo and Yantramanav from Google Fonts
+- **Forms** — BMI calculator and subscription forms
+- **Video Section** — Embedded video
+- **Responsive** — Mobile-first approach
+- **Backdrop Titles** — CSS text effects
+- **Social Links** — Footer social media icons
 
 ## 🛠️ Tech Stack
 
