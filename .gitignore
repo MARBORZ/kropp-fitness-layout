@@ -1,3 +1,14 @@
 node_modules
 dist
+.envnode_modules/
+dist/
 .env
+.env.*
+!.env.example
+.DS_Store
+*.log
+.vscode/
+.idea/
+.claude/
+CLAUDE.md
+AGENTS.md
