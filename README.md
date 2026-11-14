@@ -1,6 +1,6 @@
 # kropp-fitness-layout
 
-Landing page for a fitness club, written in HTML, CSS and a bit of JavaScript. Layout practice with Flexbox and Grid: hero, cards, a BMI calculator, a video block and a signup form.
+Fitness landing page. Layout practice project – hero, motivation cards, BMI calculator, video, forms. Wanted to practice Flexbox and Grid without frameworks.
 
 ## Run
 
